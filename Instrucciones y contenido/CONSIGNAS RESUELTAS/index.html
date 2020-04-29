@@ -10,13 +10,13 @@
 <body>
     <header id="header">
         <!-- 6.1 SEMÁNTICA -->
-            <div class="barra-navegacion"> <!-- ESTA ETIQUETA DEBE SER LA BARRA DE NAVEGACION -->
+            <nav class="barra-navegacion"> <!-- ESTA ETIQUETA DEBE SER LA BARRA DE NAVEGACION -->
                 <ul class="ul-logo">
-                    <div class="li-logo"> <!-- ESTA ETIQUETA DEBE SER UN ELEMENTO DE LISTA -->
+                    <li class="li-logo"> <!-- ESTA ETIQUETA DEBE SER UN ELEMENTO DE LISTA -->
                          <img src="img/dh.png" alt="Digital House logo">
-                    </div>  <!-- ESTA ETIQUETA DEBE SER UN ELEMENTO DE LISTA -->
+                    </li>  <!-- ESTA ETIQUETA DEBE SER UN ELEMENTO DE LISTA -->
                 </ul>
-                <div class="ul-menu"> <!-- ESTA ETIQUETA DEBE SER UN CONTENEDOR DE LISTAS DESORDENADAS -->
+                <ul class="ul-menu"> <!-- ESTA ETIQUETA DEBE SER UN CONTENEDOR DE LISTAS DESORDENADAS -->
                     <li class="li-menu"><a class="li-black" href="#home">Punto 1</a></li>
                     <li class="li-menu"><a class="li-black" href="#pseudoselectores">Punto 2</a></li>
                     <li class="li-menu"><a class="li-black" href="#flex1">Punto 3</a></li>
@@ -24,8 +24,8 @@
                     <li class="li-menu"><a class="li-black" href="#form">Punto 5</a></li>
                     <li class="li-menu"><a class="li-black" href="#social">Punto 6</a></li>
                     <li class="li-menu"><a class="li-black" href="#footer">Punto 7</a></li>
-                </div> <!-- ESTA ETIQUETA DEBE SER UN CONTENEDOR DE LISTAS DESORDENADAS -->
-            </div> <!-- ESTA ETIQUETA DEBE SER LA BARRA DE NAVEGACION -->
+                </ul> <!-- ESTA ETIQUETA DEBE SER UN CONTENEDOR DE LISTAS DESORDENADAS -->
+            </nav> <!-- ESTA ETIQUETA DEBE SER LA BARRA DE NAVEGACION -->
         </header>
     <section class="home" id="home">
         <img src="img/mesaysillas.png" alt="" class="mesaysilla-home">
@@ -92,9 +92,36 @@
     <section class="form" id="form">
         <h2 class="subtitle">Sign in</h2>
         <div class="form-container">
-
             <!-- 5) FORMULARIO -->
-
+            <form class="" action="index.html" method="post">
+              <div class="">
+                <input type="text" placeholder="name" name="name" value="name">
+              </div>
+              <div class="">
+                <input type="email" placeholder="email" name="email" value="email">
+              </div>
+              <div class="">
+                <input type="password" placeholder="password" name="password" value="password">
+              </div>
+              <div class="">
+                <select class="" name="country">
+                  <option value="Ar">Argentina</option>
+                  <option value="Fin">Finland</option>
+                  <option value="Egp">Egipto</option>
+                </select>
+              </div>
+              <div class="">
+                <label for="newsletter">Do you want to subscribe to our newsletter?</label>
+                <input type="radio" name="newsletter" value="true">
+                <input type="radio" name="newsletter" value="false">
+              </div>
+              <div class="">
+                <textarea type="comment" rows="8" cols="40" placeholder="LEAVE A COMMENT" name="" value=""></textarea>
+              </div>
+              <div class="">
+                <button type="submit" name="button">Send</button>
+              </div>
+            </form>
         </div>
     </section>
     <section class="social-network" id="social">
@@ -102,13 +129,13 @@
         <h2 class="subtitle">Social networks</h2>
         <div>
             <h5>
-                    Facebook <!-- INSERTAR ENLACE -->
+                    <a href="https://www.facebook.com">Facebook</a> <!-- INSERTAR ENLACE -->
             </h5>
             <img src="img/facebook.png" alt="" class="facebook-icon">
         </div>
         <div>
             <h5>
-                    Instagram <!-- INSERTAR ENLACE -->
+                    <a href="https://www.instagram.com">Instagram</a> <!-- INSERTAR ENLACE -->
             </h5>
             <img src="img/instagram.png" alt="" class="facebook-icon">
         </div>
